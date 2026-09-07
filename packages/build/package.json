@@ -1,0 +1,20 @@
+{
+  "name": "@harness/build",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/contracts": "workspace:*",
+    "@harness/islands": "workspace:*",
+    "@harness/renderers": "workspace:*",
+    "esbuild": "^0.21.0",
+    "esbuild-svelte": "^0.8.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json"
+  }
+}

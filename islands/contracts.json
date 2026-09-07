@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "contracts": [
+    {
+      "contract_id": "hero-cta",
+      "props": [
+        { "name": "heading",   "type": "string", "required": true,  "default": null },
+        { "name": "cta_label", "type": "string", "required": true,  "default": null }
+      ],
+      "events": [ { "name": "cta_click", "payload": "void" } ],
+      "a11y": {
+        "role": "region",
+        "label": { "source": "prop", "prop": "heading" },
+        "keyboard": ["activate"],
+        "focus": "none"
+      }
+    },
+    {
+      "contract_id": "nav-menu",
+      "props": [
+        { "name": "items", "type": "json", "required": true, "default": null }
+      ],
+      "events": [ { "name": "navigate", "payload": "json" } ],
+      "a11y": {
+        "role": "navigation",
+        "label": { "source": "static", "value": "Main navigation" },
+        "keyboard": ["activate", "navigate"],
+        "focus": "none"
+      }
+    },
+    {
+      "contract_id": "data-table",
+      "props": [
+        { "name": "data",      "type": "json",   "required": true,  "default": null },
+        { "name": "page_size", "type": "number", "required": false, "default": 10 }
+      ],
+      "events": [ { "name": "sort_change", "payload": "json" } ],
+      "a11y": {
+        "role": "region",
+        "label": { "source": "static", "value": "Results table" },
+        "keyboard": ["navigate", "activate"],
+        "focus": "none"
+      }
+    }
+  ]
+}

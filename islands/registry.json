@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "implementations": [
+    { "contract_id": "hero-cta", "renderer": "react", "module": "./packages/renderers/src/components/hero-cta/react.tsx" },
+    { "contract_id": "hero-cta", "renderer": "preact", "module": "./packages/renderers/src/components/hero-cta/preact.tsx" },
+    { "contract_id": "hero-cta", "renderer": "svelte", "module": "./packages/renderers/src/components/hero-cta/svelte.svelte" },
+    { "contract_id": "hero-cta", "renderer": "vanilla", "module": "./packages/renderers/src/components/hero-cta/vanilla.ts" },
+    { "contract_id": "nav-menu", "renderer": "react", "module": "./packages/renderers/src/components/nav-menu/react.tsx" },
+    { "contract_id": "nav-menu", "renderer": "preact", "module": "./packages/renderers/src/components/nav-menu/preact.tsx" },
+    { "contract_id": "nav-menu", "renderer": "svelte", "module": "./packages/renderers/src/components/nav-menu/svelte.svelte" },
+    { "contract_id": "nav-menu", "renderer": "vanilla", "module": "./packages/renderers/src/components/nav-menu/vanilla.ts" },
+    { "contract_id": "data-table", "renderer": "react", "module": "./packages/renderers/src/components/data-table/react.tsx" },
+    { "contract_id": "data-table", "renderer": "preact", "module": "./packages/renderers/src/components/data-table/preact.tsx" },
+    { "contract_id": "data-table", "renderer": "svelte", "module": "./packages/renderers/src/components/data-table/svelte.svelte" },
+    { "contract_id": "data-table", "renderer": "vanilla", "module": "./packages/renderers/src/components/data-table/vanilla.ts" }
+  ]
+}

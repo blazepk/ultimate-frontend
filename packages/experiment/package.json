@@ -1,0 +1,19 @@
+{
+  "name": "@harness/experiment",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@harness/contracts": "workspace:*",
+    "@harness/build": "workspace:*",
+    "@harness/measure": "workspace:*",
+    "@harness/engine": "workspace:*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json"
+  }
+}

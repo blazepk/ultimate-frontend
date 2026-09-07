@@ -1,0 +1,28 @@
+{
+  "name": "@harness/renderers",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./react": "./src/react.ts",
+    "./preact": "./src/preact.ts",
+    "./svelte": "./src/svelte.ts",
+    "./vanilla": "./src/vanilla.ts"
+  },
+  "dependencies": {
+    "@harness/contracts": "workspace:*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "preact": "^10.0.0",
+    "svelte": "^4.0.0"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json"
+  }
+}

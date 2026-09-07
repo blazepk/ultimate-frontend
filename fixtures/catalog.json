@@ -1,0 +1,3 @@
+{ "rows": [ { "sku": "a-1", "name": "Alpha", "price": 10 },
+            { "sku": "b-2", "name": "Beta",  "price": 20 },
+            { "sku": "c-3", "name": "Gamma", "price": 30 } ] }
