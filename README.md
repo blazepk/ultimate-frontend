@@ -50,9 +50,8 @@ Verified on the committed tree:
 - **241 tests passing** across 24 files (contracts 40, reward 62, kb 58,
   renderers 37, islands 17, experiment 12, measure 8, build 7)
 
-Known issue: `pnpm test` at the repo root exits 1. `apps/site` has a vitest
-config but no test files, and vitest treats that as a failure. The package
-suites all pass; run `pnpm --filter "./packages/**" test` to see them.
+`apps/site` carries no tests of its own and runs with `--passWithNoTests`,
+so the root gate stays green.
 
 This is a working experiment, not a product. It is published because the
 harness is the point.
@@ -62,6 +61,6 @@ harness is the point.
 ```sh
 pnpm install
 pnpm typecheck
-pnpm --filter "./packages/**" test
+pnpm test
 pnpm build
 ```
